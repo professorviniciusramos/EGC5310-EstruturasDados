@@ -33,3 +33,13 @@ Cada semana contém:
 - exercícios;
 - soluções;
 - revisão.
+
+## Notebooks
+
+### Notebook da aula
+
+[![Abrir no Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/professorviniciusramos/EGC5310-EstruturasDados/blob/main/Semana01/EGC5310-EstruturasDados-S01-03-Aula.ipynb)
+
+### Notebook do estudante
+
+[![Abrir no Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/professorviniciusramos/EGC5310-EstruturasDados/blob/main/Semana01/EGC5310-EstruturasDados-S01-04-Estudante.ipynb)
