@@ -1,6 +1,306 @@
+/* EGC5310 — Reveal.js / Quarto — V2 */
 :root {
-    --cd-blue: #009BDB;
-    --cd-gold: #DDB56A;
-    --cd-dark: #231F20;
-    --cd-gray: #8A8C8E;
+  --cd-blue: #0094D4;
+  --cd-gold: #CCAC71;
+  --cd-dark: #221F20;
+  --cd-gray: #818285;
+  --cd-light: #F6F7F8;
+  --cd-white: #FFFFFF;
+}
+
+.reveal { color: var(--cd-dark); font-family: Arial, Helvetica, sans-serif; }
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--cd-dark); font-weight: 700; letter-spacing: -0.02em; text-transform: none;
+}
+.reveal h2 {
+  border-bottom: 4px solid var(--cd-blue);
+  padding-bottom: 0.18em; margin-bottom: 0.62em;
+}
+.reveal h3 { font-size: 0.78em; text-align: center; color: var(--cd-gray); margin-bottom: 0.75em; }
+.reveal strong { font-weight: 750; }
+.reveal pre { width: 96%; margin-left: auto; margin-right: auto; }
+.reveal pre code { font-size: 0.76em; line-height: 1.22; max-height: 520px; }
+
+.blue, .blue-text { color: var(--cd-blue) !important; }
+.gold, .gold-text { color: var(--cd-gold) !important; }
+.gray, .muted { color: var(--cd-gray) !important; }
+
+.title-slide-custom { text-align: center !important; }
+.title-slide-custom h2, section.title-slide-custom h2 { border-bottom: none !important; }
+.course-logo {
+  display: block; max-height: 210px; max-width: 450px; object-fit: contain;
+  margin: 0 auto 0.5em auto !important;
+}
+.course-name { font-size: 1.38em; font-weight: 800; letter-spacing: 0.02em; }
+.week-label {
+  color: var(--cd-blue); font-size: 0.85em; font-weight: 800;
+  letter-spacing: 0.16em; margin-top: 0.45em;
+}
+.subtitle-custom { color: var(--cd-gray); font-size: 0.68em; margin-top: 0.4em; }
+
+.question-slide { text-align: center !important; }
+.question-slide h2, section.question-slide h2 {
+  border-bottom: none !important; font-size: 1.72em !important;
+  line-height: 1.18; margin-top: 1.25em;
+}
+
+.pipeline {
+  display: flex; align-items: center; justify-content: center; gap: 0.22em;
+  flex-wrap: nowrap; width: 96%; margin: 1.55em auto 1em auto;
+}
+.pipe {
+  border: 2px solid var(--cd-gray); border-radius: 11px; padding: 0.44em 0.48em;
+  font-size: 0.53em; font-weight: 700; white-space: nowrap; background: var(--cd-white);
+}
+.pipe.active { border-color: var(--cd-blue); background: var(--cd-blue); color: var(--cd-white); }
+.gold-border { border-color: var(--cd-gold); color: var(--cd-gold); }
+.arrow { color: var(--cd-gray); font-size: 0.78em; font-weight: 700; }
+.vertical-pipeline { flex-direction: column; gap: 0.03em; margin-top: 0.35em; }
+.vertical-pipeline .pipe { min-width: 210px; text-align: center; padding: 0.16em 0.75em; }
+.vertical-pipeline .arrow { line-height: 0.82; }
+
+/* V2: cards constrained safely inside viewport */
+.student-row {
+  display: flex; justify-content: center; align-items: stretch;
+  gap: 0.42em; width: 88%; max-width: 980px;
+  margin: 1.25em auto 0 auto; box-sizing: border-box;
+}
+.student-card {
+  flex: 1 1 0; min-width: 0; max-width: 215px;
+  border: 3px solid var(--cd-dark); border-radius: 15px;
+  padding: 0.52em 0.24em; text-align: center; background: var(--cd-white);
+  box-sizing: border-box;
+}
+.student-card .mat { color: var(--cd-blue); font-size: 0.86em; font-weight: 800; }
+.student-card .name { font-size: 0.66em; font-weight: 750; margin-top: 0.22em; }
+.student-card .course {
+  color: var(--cd-gray); font-size: 0.34em; margin-top: 0.28em; overflow-wrap: anywhere;
+}
+.student-card.muted { opacity: 0.42; }
+.student-card.target {
+  border-color: var(--cd-gold); box-shadow: 0 0 0 4px rgba(204,172,113,0.18);
+}
+.student-card.target .mat { color: var(--cd-gold); }
+
+.prompt, .prompt-gold {
+  text-align: center; font-size: 0.9em; font-weight: 700; margin-top: 0.9em;
+}
+.prompt-gold { color: var(--cd-gold); }
+.small-note {
+  color: var(--cd-gray); font-size: 0.58em; text-align: center; margin-top: 0.85em;
+}
+
+.three-words {
+  display: flex; justify-content: center; gap: 0.65em;
+  margin-top: 2em; font-size: 1.25em; font-weight: 800;
+}
+.question-list {
+  display: flex; flex-direction: column; gap: 0.62em;
+  margin: 1em auto; max-width: 900px; font-size: 0.78em;
+}
+.question-big { text-align: center; margin-top: 0.9em; font-size: 0.98em; font-weight: 700; }
+
+/* V2: search is state change, not element appearance */
+.search-stage { width: 90%; max-width: 930px; margin: 0.85em auto 0 auto; }
+.search-state {
+  display: flex; justify-content: center; gap: 0.48em;
+  margin: 0.4em auto;
+}
+.search-card {
+  position: relative; flex: 1 1 0; max-width: 180px; min-width: 0;
+  padding: 0.5em 0.18em; border: 3px solid var(--cd-gray);
+  border-radius: 13px; text-align: center; font-weight: 800; box-sizing: border-box;
+}
+.search-card.idle { color: var(--cd-gray); border-color: #CFD1D2; }
+.search-card.current {
+  color: var(--cd-blue); border-color: var(--cd-blue);
+  box-shadow: 0 0 0 3px rgba(0,148,212,0.12);
+}
+.search-card.visited {
+  color: var(--cd-gray); border-color: var(--cd-gray); background: var(--cd-light);
+}
+.search-card.found {
+  color: var(--cd-gold); border-color: var(--cd-gold);
+  box-shadow: 0 0 0 3px rgba(204,172,113,0.14);
+}
+.badge-count {
+  position: absolute; top: -0.72em; right: -0.35em;
+  width: 1.45em; height: 1.45em; line-height: 1.45em;
+  border-radius: 50%; color: white; background: var(--cd-blue); font-size: 0.48em;
+}
+.gold-bg { background: var(--cd-gold); }
+
+.dot-sequence {
+  text-align: center; font-size: 1.65em; letter-spacing: 0.12em;
+  margin: 0.35em 0 0.55em 0;
+}
+.hit { color: var(--cd-blue); }
+.hit-gold { color: var(--cd-gold); }
+.complexity {
+  text-align: center; font-size: 1.8em; font-weight: 850; margin-top: 0.28em;
+}
+.reveal .columns .column > p { text-align: center; }
+
+.concept-slide { text-align: center !important; }
+.concept-slide h2, section.concept-slide h2 { border-bottom: none !important; }
+.big-symbol, .big-o {
+  display: block; color: var(--cd-blue); font-size: 3.3em; font-weight: 850; line-height: 1;
+}
+.big-o { color: var(--cd-gold); font-size: 2.7em; }
+.concept-definition { margin-top: 0.9em; font-size: 0.9em; font-weight: 650; }
+.reveal .math.display { margin: 0.72em 0; }
+
+.growth-line {
+  text-align: center; font-size: 1.1em; font-weight: 800;
+  margin-top: 1.9em; word-spacing: 0.1em;
+}
+
+/* V2: clock slide has explicit context */
+.context-line {
+  text-align: center; color: var(--cd-gray); font-size: 0.72em; margin-top: 1em;
+}
+.inequality {
+  text-align: center; font-size: 1.28em; font-weight: 900;
+  letter-spacing: 0.025em; margin-top: 1.1em;
+}
+
+.hypothesis {
+  max-width: 900px; margin: 1.35em auto 0 auto;
+  font-size: 0.95em; line-height: 1.4; text-align: center;
+}
+.scale-number {
+  text-align: center; color: var(--cd-blue);
+  font-size: 2.15em; font-weight: 900; line-height: 1; margin-top: 0.28em;
+}
+.scale-label {
+  text-align: center; color: var(--cd-gray); font-size: 0.6em; margin-bottom: 0.35em;
+}
+.final-question {
+  color: var(--cd-gold); text-align: center;
+  font-size: 1em; font-weight: 800; margin-top: 0.7em;
+}
+.not-slide { font-size: 0.6em; }
+
+.reveal .cell-output-display img {
+  max-height: 500px; max-width: 92%; width: auto; margin: 0 auto; display: block;
+}
+
+@media (max-width: 1100px) {
+  .student-row { width: 92%; gap: 0.28em; }
+  .student-card { padding: 0.4em 0.16em; }
+  .student-card .mat { font-size: 0.8em; }
+  .student-card .name { font-size: 0.6em; }
+  .pipe { font-size: 0.48em; }
+  .search-stage { width: 94%; }
+}
+
+/* ============================================================
+   V3 — correções pontuais
+   ============================================================ */
+
+/* Slide 5: pipeline em duas linhas */
+.pipeline-two-rows {
+  width: 86%;
+  max-width: 900px;
+  margin: 1.15em auto 0.55em auto;
+}
+
+.pipeline-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.42em;
+}
+
+.pipeline-row .pipe {
+  min-width: 125px;
+  text-align: center;
+  font-size: 0.62em;
+  padding: 0.48em 0.62em;
+}
+
+.pipeline-row .arrow {
+  font-size: 0.9em;
+}
+
+.pipeline-turn {
+  color: var(--cd-blue);
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0.18em 0;
+}
+
+/* Slide 11: dois casos por coluna */
+.case-item {
+  text-align: center;
+  margin: 0.55em auto 0.95em auto;
+}
+
+.case-label {
+  color: var(--cd-dark);
+  font-size: 0.62em;
+  font-weight: 750;
+}
+
+.case-item .dot-sequence {
+  font-size: 1.25em;
+  margin: 0.18em 0 0.12em 0;
+}
+
+.case-answer {
+  color: var(--cd-gray);
+  font-size: 0.58em;
+  min-height: 1.2em;
+}
+
+@media (max-width: 1100px) {
+  .pipeline-two-rows {
+    width: 92%;
+  }
+
+  .pipeline-row {
+    gap: 0.28em;
+  }
+
+  .pipeline-row .pipe {
+    min-width: 105px;
+    font-size: 0.55em;
+    padding: 0.42em 0.48em;
+  }
+}
+
+/* ============================================================
+   V4 — Slide 5 em Quarto/Pandoc Markdown nativo
+   ============================================================ */
+
+.investigation-map {
+  width: 86%;
+  max-width: 900px;
+  margin: 1.35em auto 0.65em auto;
+  text-align: center;
+  font-size: 0.95em;
+  line-height: 2.15;
+  font-weight: 650;
+}
+
+.investigation-map p {
+  margin: 0.15em 0;
+}
+
+.investigation-map .active-step {
+  display: inline-block;
+  padding: 0.16em 0.42em;
+  border-radius: 8px;
+  background: var(--cd-blue);
+  color: var(--cd-white);
+}
+
+@media (max-width: 1100px) {
+  .investigation-map {
+    width: 92%;
+    font-size: 0.84em;
+  }
 }

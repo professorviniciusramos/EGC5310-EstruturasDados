@@ -1,0 +1,21 @@
+project:
+  type: default
+
+  render:
+    - "Semana*/EGC5310-EstruturasDados-S*-99-Aula-Mestre.ipynb"
+
+  resources:
+    - assets/**
+
+format:
+  revealjs:
+    theme: simple
+    css: assets/egc5310.css
+    slide-number: true
+    progress: true
+    controls: true
+    transition: fade
+    center: false
+    scrollable: true
+    embed-resources: true
+    self-contained-math: true
