@@ -961,69 +961,69 @@ Preencher preferencialmente logo após o segundo encontro.
 
 ## Execução
 
-**Data(s):**
+**Data(s):** 13 e 14 de agosto de 2026
 
-**Até onde a sequência chegou:**
+**Até onde a sequência chegou:** Finalizei todos os slides
 
-**Tempo efetivamente utilizado:**
+**Tempo efetivamente utilizado:** todo o tempo
 
-**Ponto em que houve maior discussão:**
+**Ponto em que houve maior discussão:** na primeira implementação, para discutir como seria implementado
 
 ------------------------------------------------------------------------
 
 ## Turma
 
-**Nível de Python observado:**
+**Nível de Python observado:** apenas 8 alunos apareceram em sala, desses, 3 têm um excelente domínio do Python, 2 sabem muito pouco e 3 têm um nível intermediário
 
-**Principais dificuldades técnicas:**
+**Principais dificuldades técnicas:** alguns têm dificuldades do básico
 
-**Principais dificuldades conceituais:**
+**Principais dificuldades conceituais:** pensar no algoritmo em si e escrever o código
 
-**Participação oral:**
+**Participação oral:** todos
 
-**Funcionamento de duplas/trios:**
+**Funcionamento de duplas/trios:** não foi testado
 
 ------------------------------------------------------------------------
 
 ## Conteúdo
 
-**Conceitos compreendidos rapidamente:**
+**Conceitos compreendidos rapidamente:** todos
 
-**Conceitos que exigiram mais tempo:**
+**Conceitos que exigiram mais tempo:** nenhum
 
-**Confusões recorrentes:**
+**Confusões recorrentes:** nenhuma
 
-**Perguntas inesperadas dos estudantes:**
+**Perguntas inesperadas dos estudantes:** nenhuma
 
 ------------------------------------------------------------------------
 
 ## Notebook Mestre / Reveal.js
 
-**HTML funcionou adequadamente:**
+**HTML funcionou adequadamente:** um pouco. não tem indicações de que o estudante deve ir ao seu notebook e implementar algo.
 
-**Código ficou legível:**
+**Código ficou legível:** sim
 
-**Elementos visuais ajudaram:**
+**Elementos visuais ajudaram:** sim
 
-**Slides/células a corrigir:**
+**Slides/células a corrigir:** não
 
-**Problemas de navegação/apresentação:**
+**Problemas de navegação/apresentação:** não
 
-**Vale manter o formato na Semana 02?**
+**Vale manter o formato na Semana 02?** sim
 
 ------------------------------------------------------------------------
 
 ## Ajustes futuros
 
-**O que retirar:**
+**O que retirar:** nada
 
-**O que acrescentar:**
+**O que acrescentar:** indicativo de qual célula deve ser implementada pelo estudante em seu notebook
 
-**O que simplificar:**
+**O que simplificar:** nada
 
-**O que deve permanecer exatamente como está:**
+**O que deve permanecer exatamente como está:** a estrutura dos slides e a navegação
 
-**Implicações para a Semana 02:**
+**Implicações para a Semana 02:** as implementações devem ter mais tempo para serem realizadas.
 
 ------------------------------------------------------------------------
 
