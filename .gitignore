@@ -1,6 +1,21 @@
+# Arquivos e pastas temporárias do Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
 /.quarto/
 **/*.quarto_ipynb
 
 *_files/
+
+
+# OU, se quiser ignorar apenas arquivos MD temporários/específicos (exemplo):
+*temp*.md
+~*.md
+
+
+# Ignora arquivos que contêm .md.~ seguido de qualquer caractere/hash
+*.md.~*
+
+# Ignora qualquer arquivo oculta/temporária que comece com ponto e tenha .~ no nome
+.*.~*
