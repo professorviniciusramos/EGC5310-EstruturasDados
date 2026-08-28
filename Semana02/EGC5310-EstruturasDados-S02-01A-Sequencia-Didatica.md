@@ -996,41 +996,41 @@ Após a execução da S02, registrar no documento de revisão:
 
 ## Narrativa
 
-- A retomada da S01 funcionou?
-- A pergunta sobre representação foi compreendida?
-- A progressão problema → dados → operações → representação ficou clara?
-- A introdução qualitativa ao custo foi suficiente?
-- A pergunta final criou interesse para S03?
+- A retomada da S01 funcionou? Sim.
+- A pergunta sobre representação foi compreendida? Sim.
+- A progressão problema → dados → operações → representação ficou clara? Sim.
+- A introdução qualitativa ao custo foi suficiente? Sim.
+- A pergunta final criou interesse para S03? Não deu tempo.
 
 ## Notebook Estudante
 
-- Os estudantes perceberam as chamadas visuais?
-- Abriram o notebook no momento correto?
-- Houve demora excessiva na transição?
-- As atividades estavam claramente identificadas?
-- A previsão antes da execução funcionou?
+- Os estudantes perceberam as chamadas visuais? Sim
+- Abriram o notebook no momento correto? Sim.
+- Houve demora excessiva na transição? Não.
+- As atividades estavam claramente identificadas? Sim.
+- A previsão antes da execução funcionou? Sim.
 
 ## Python
 
-- Quais dificuldades apareceram?
-- Listas e dicionários eram familiares?
-- Estruturas aninhadas foram excessivamente complexas?
-- Foi necessário ensinar sintaxe não planejada?
+- Quais dificuldades apareceram? Implementação de classes e objetos.
+- Listas e dicionários eram familiares? Sim
+- Estruturas aninhadas foram excessivamente complexas? Não.
+- Foi necessário ensinar sintaxe não planejada? Falar rapidamente sobre classes e objetos.
 
 ## Tempo
 
-- Onde terminou o primeiro encontro?
-- Quanto tempo cada atividade efetivamente consumiu?
-- O que foi reduzido?
-- O que não foi realizado?
+- Onde terminou o primeiro encontro? Slide 17.
+- Quanto tempo cada atividade efetivamente consumiu? Não sei.
+- O que foi reduzido? Últimos 5 slides foram comentados, mas não explorados.
+- O que não foi realizado? Últimos 5 slides. Não fizemos a geração do Benchmark, não realizamos nenhum exercício extra.
 
 ## Formato
 
-- Notebook Mestre + Quarto funcionou melhor que na S01?
-- As chamadas ao Notebook Estudante reduziram a desconexão entre materiais?
-- Houve excesso de troca entre janelas?
-- Alguma chamada deveria estar em slide próprio?
-- O retorno do Notebook Estudante à apresentação foi natural?
+- Notebook Mestre + Quarto funcionou melhor que na S01? Funcionou razoavelmente bem. Os códigos estão duplicados no slide, a única diferença do segundo código no slide XX é que ele apresenta a saída. Fica muito ruim assim. Apenas uma vez é suficiente.
+- As chamadas ao Notebook Estudante reduziram a desconexão entre materiais? Mais ou menos. Ficou estranho ainda. Preciso testar mais uma vez.
+- Houve excesso de troca entre janelas? Não.
+- Alguma chamada deveria estar em slide próprio? O botão para o notebook do estudante também deve aparecer no notebook mestre.
+- O retorno do Notebook Estudante à apresentação foi natural? Eles não fazem essa transição. Assistem ao que eu estou mostrando.
 
 ## Continuidade
 
