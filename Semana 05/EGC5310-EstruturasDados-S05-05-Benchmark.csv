@@ -1,0 +1,17 @@
+n,cenario,tamanho_tabela,taxa_carga,colisoes,buckets_ocupados,comprimento_medio_buckets_ocupados,maior_bucket,caso_busca,comparacoes,repeticoes,tempo_construcao_ns,tempo_busca_ns_mediano,tempo_busca_ns_min,tempo_busca_ns_max
+100,distribuidas,100,1.0,0,100,1,1,existente_ultimo,1,11,15513,232,164,1356
+100,distribuidas,100,1.0,0,100,1,1,inexistente_mesmo_bucket,1,11,15513,172,162,746
+100,concentradas,100,1.0,99,1,100,100,existente_ultimo,100,11,23135,2054,2006,2997
+100,concentradas,100,1.0,99,1,100,100,inexistente_mesmo_bucket,100,11,23135,2099,2051,2343
+1000,distribuidas,1000,1.0,0,1000,1,1,existente_ultimo,1,11,168664,218,181,895
+1000,distribuidas,1000,1.0,0,1000,1,1,inexistente_mesmo_bucket,1,11,168664,191,175,569
+1000,concentradas,1000,1.0,999,1,1000,1000,existente_ultimo,1000,11,339652,21792,21589,26354
+1000,concentradas,1000,1.0,999,1,1000,1000,inexistente_mesmo_bucket,1000,11,339652,21736,21601,22141
+10000,distribuidas,10000,1.0,0,10000,1,1,existente_ultimo,1,11,2849997,256,186,1608
+10000,distribuidas,10000,1.0,0,10000,1,1,inexistente_mesmo_bucket,1,11,2849997,181,168,691
+10000,concentradas,10000,1.0,9999,1,10000,10000,existente_ultimo,10000,11,2496112,280529,221627,865229
+10000,concentradas,10000,1.0,9999,1,10000,10000,inexistente_mesmo_bucket,10000,11,2496112,294006,221855,1016737
+100000,distribuidas,100000,1.0,0,100000,1,1,existente_ultimo,1,11,30526735,244,180,3170
+100000,distribuidas,100000,1.0,0,100000,1,1,inexistente_mesmo_bucket,1,11,30526735,186,179,1058
+100000,concentradas,100000,1.0,99999,1,100000,100000,existente_ultimo,100000,11,36263276,2795438,2574482,3413120
+100000,concentradas,100000,1.0,99999,1,100000,100000,inexistente_mesmo_bucket,100000,11,36263276,3265064,2681328,4872967
