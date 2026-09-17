@@ -1,0 +1,7 @@
+# S06 · Guia dos benchmarks
+
+Execute `python EGC5310-EstruturasDados-S06-05-Benchmark.py --xlsx 'Online Retail.xlsx'` após baixar o [arquivo original da UCI](https://archive.ics.uci.edu/dataset/352/online+retail). Sem `--xlsx`, o script produz somente uma **fixture sintética** para verificar a execução; o CSV incluído foi gerado assim e **não representa resultados empíricos do conjunto UCI**. A fonte e licença são Chen (2015), DOI 10.24432/C5BW33, CC BY 4.0.
+
+O experimento de busca varia `n` de produtos únicos e o número de consultas `q`; escolhe metade das consultas como inexistentes, usa mesma sequência de chaves para todas as estratégias e separa `preparo_s`, `operacao_s` e `total_s`. Preparação mede cópia, ordenação ou construção do índice. Cada medida é mediana de três rodadas, em segundos, com `timeit`. O experimento de lote contrasta loop Python e ndarray prontos, de 1 mil a 500 mil linhas; não inclui o tempo de converter os dados em arrays. Rode novamente com preparação incluída para avaliar uma operação única.
+
+As medições são pequenas e dependem de máquina, carga e cardinalidade; não compare segundos entre computadores. A busca por intervalo, inserções e gráfico de capacidade estão no Notebook Professor, pois respondem perguntas próprias. No Excel real, 541.909 itens de transação não equivalem a 541.909 códigos únicos; isto afeta a escala da primeira medição. O script aceita os valores que o arquivo disponibilizar.

@@ -205,6 +205,13 @@ professor retome a semana anos depois e compreenda:
 -   o que observar nos estudantes;
 -   como encerrar a semana.
 
+Produzir:
+`EGC5310-EstruturasDados-S05-01A-Sequencia-Didatica`
+A Sequência Didática não é o roteiro, é descrição detalhada da progressão, intervenções, perguntas, respostas esperadas e transições;
+
+`EGC5310-EstruturasDados-S05-01B-Resumo-Professor`
+O resumo do professor é uma síntese para leitura nos cinco minutos anteriores à aula.
+
 ## Etapa 3 --- Material principal de apresentação
 
 Conforme o experimento da semana:
